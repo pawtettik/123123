@@ -1,32 +1,204 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <cmath>
+#define PI 3.14
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int begin_1(int a)
+{
+int P=4*a;
+return P;
+}
 
-# Precompiled Headers
-*.gch
-*.pch
+int begin_2(int a)
+{
+int S = pow(a,2);
+return S;
+}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+int begin_3(int a, int b)
+{
+int S=a*b;
+int P=2*(a+b);
+return S;
+}
 
-# Fortran module files
-*.mod
-*.smod
+int begin3_1(int a, int b)
+{
+int S=a*b;
+int P=2*(a+b);
+return P;
+}
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+int begin_4(int d)
+{
+int L = PI*d;
+return L;
+}
 
-# Executables
-*.exe
-*.out
-*.app
+int begin_5(int a)
+{
+int V=pow(a,3);
+int S=6*pow(a,2);
+return V;
+}
+
+int begin_5_1(int a)
+{
+int V=pow(a,3);
+int S=6*pow(a,2);
+return S;
+}
+
+int begin_6(int a, int b, int c)
+{
+int V=a*b*c;
+int S=2*(a*b+b*c+a*c);
+return V;
+}
+
+int begin_6_1(int a, int b, int c)
+{
+int V=a*b*c;
+int S=2*(a*b+b*c+a*c);
+return S;
+}
+
+int begin_7(int R)
+{
+int L=2*PI*R;
+int S=PI*pow(R,2);
+return L;
+}
+
+int begin_7_1(int R)
+{
+int L=2*PI*R;
+int S=PI*pow(R,2);
+return S;
+}
+
+int begin_8(int a, int b)
+{
+return (a+b)/2;
+}
+
+int begin_9(int a, int b)
+{
+return sqrt(a*b);
+}
+
+void begin_10(int a, int b)
+{
+int summa = pow(a,2)+pow(b,2);
+int raznosst = pow(a,2)-pow(b,2);
+int mnozhnnie = pow(a,2)*pow(b,2);
+int chastnnoe = pow(a,2)/pow(b,2);
+if (a != 0 && b != 0)
+{
+std::cout << summa << std::endl;
+std::cout << raznost << std::endl;
+std::cout << mnozhennie << std::endl;
+std::cout << chastnoe << std::endl;
+}
+else
+{
+std::cout << "nothing" << std::endl ;
+}
+}
+
+void begin_11(int a, int b)
+{
+int summa = abs(a)+abs(b);
+int raznost = abs(a)-abs(b);
+int mnozhennie = abs(a)*abs(b);
+int chastnoe = abs(a)/abs(b);
+if (a != 0 && b != 0)
+{
+std::cout << summa << std::endl;
+std::cout << raznost << std::endl;
+std::cout << mnozhennie << std::endl;
+std::cout << chastnoe << std::endl;
+}
+else
+{
+std::cout << "nothing" << std::endl;
+}
+}
+
+void begin_12(int a, int b)
+{
+int C = sqrt(pow(a,2) + pow(b,2));
+int P = a+b+c;
+std::cout << C << std::endl;
+std::cout << P << std::endl;
+}
+
+void begin_13(int R1, int R2)
+{
+int S1 = PI*pow(R1,2);
+int S2 = PI*pow(R2,2);
+int S3 = S1-S2;
+std::cout << S1 << std::endl;
+std::cout << S2 << std::endl;
+std::cout << S3 << std::endl;
+}
+
+void begin_14(int L)
+{
+int R = L/(2*PI);
+int S = PI*pow(r,2);
+std::cout << " znachenie S=" << S << std::endl;
+std::cout << " znachenie R=" << R << std::endl;
+}
+
+void begin_15(int S)
+{
+S = PI*pow(D,2)/4;
+int D = sqrt(S/PI)*2;
+int L = PI * D;
+std::cout << D << std::endl;
+std::cout << L << std::endl;
+}
+
+int begin_16(int X1, int X2)
+{
+return abs(X2-X1);
+}
+
+void begin_17(int A, int B, int C)
+{
+int AC = A+C;
+int BC = B+C;
+int SUMMA = AC+BC;
+std::cout << "AC = " << AC << std::endl ;
+std::cout << "BC = " << BC << std::endl;
+std::cout << "SUMMA AB, AC " << SUMMA << std::endl;
+}
+
+void begin_18(int A, int B, int C)
+{
+int AC = A+C;
+int BC = C+B;
+int SUMMA = AC+BC;
+std::cout << "SUMMA AC, BC" << SUMMA << std::endl;
+}
+
+void begin_19(int X1, int Y1, int X2, int Y2)
+{
+int P = 2*(abs(X1-X2)+abs(Y1-Y2));
+int S = abs(X1-X2)*abs(Y1-Y2);
+std::cout << P << std::endl;
+std::cout << S << std::endl;
+}
+
+void begin_20(int X1, int Y1, int X2, int Y2)
+{
+int rasstoyanie = sqrt(pow(x1-x2,2)+pow(y1 - y2,2));
+std::cout << rasstoyanie << std::endl;
+}
+
+
+int main()
+{
+
+}
